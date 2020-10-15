@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Profile</title>
+<link href="css/base.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header id="top">
+	<h1><a href="index.html">Lovery</a></h1>
+	<nav>
+		<ul>
+			<li id="nav_top"><a href="index.html">Top</a></li>
+			<li id="nav_profile"><a href="profile.html">Profile</a></li>
+			<li id="nav_works"><a href="works.html">Works</a></li>
+			<li id="nav_others"><a href="others2.html">Others</a></li>
+			<li id="nav_contact"><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+</header>
+
+	<h2 class="page_tit">Contact</a></h2>
+	<div class="conbox">
+	<!--メールフォーム用のHTMLタグはここから-->
+			<form id="mailform" method="post" action="mailform/send.cgi" onsubmit="return sendmail(this);">
+				<table border="0" cellspacing="0" cellpadding="0" class="mailform">
+					<tr>
+						<th>お名前<span>*</span><p>your name</p></th>
+						<td><input type="text" name="お名前(必須)" size="80%" /></td>
+					</tr>
+					<tr>
+						<th>メールアドレス<span>*</span><p>e-mail address</p></th>
+						<td><input type="text" name="email(必須)" size="80%" maxlength="50" class="mf" /></td>
+					</tr>
+					<tr>
+						<th>確認用メールアドレス<span>*</span><p>e-mail address</p></th>
+						<td><input type="text" name="confirm_email" size="80%" class="mf" /></td>
+					</tr>
+
+					<tr>
+						<th>お問い合わせ内容<span>*</span><p>inquiry body</p></th>
+						<td><textarea name="お問い合わせ内容(必須)" cols="30" rows="10" class="textarea"></textarea></td>
+					</tr>
+					<tr>
+						<th><span>*</span>は必須項目です。</th>
+						<td><input type="submit" value="メールを送信する" /> <input type="reset" name="reset" value="リセット" /></td>
+					</tr>
+				</table>
+			</form>
+			<link rel="stylesheet" href="mailform/mailform.css" type="text/css">
+			<script type="text/javascript" src="mailform/mailform.js" charset="utf-8"></script>
+			<script type="text/javascript" src="mailform/postcodes/get.cgi?js" charset="utf-8"></script>
+			<!--ここまでコピー＆ペーストすればまず間違いないです-->
+
+	</div>
+
+	<footer>
+		<div class="footer_in">
+		Copyright
+		</div>
+	</footer>
+</body>
+</html>

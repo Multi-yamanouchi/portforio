@@ -1,0 +1,533 @@
+@charset "utf-8";
+
+/*============================================
+全般的なスタイル
+============================================*/
+
+/*reset-----------------------------*/
+*{
+	margin: 0;
+	padding: 0;
+}
+li {list-style: none}
+a {
+	text-decoration: none;
+}
+
+
+/*余白-------------------------------*/
+.mr50 {margin: 50px 0;}
+.pb100 {padding-bottom: 100px;}
+.pb150 {padding-bottom: 150px;}
+.mb20 {margin-bottom: 20px;}
+.mb30 {margin-bottom: 30px;}
+.mb25 {margin-bottom: 25px;}
+
+/*Text-------------------------------*/
+.tunder {text-decoration: underline;}
+.tcenter {text-align: center;}
+
+
+/*fontface----------------------*/
+@font-face {
+	font-family: Savoye;
+	src: url("../Savoye LET.ttc");
+}
+
+@font-face {
+	font-family: Apple;
+	src: url("../Apple Chancery.ttf");
+}
+
+@font-face {
+	font-family: shirokuma;
+	src: url("../001Shirokuma-Regular.otf");
+}
+
+@font-face {
+	font-family: bradley;
+	src: url("../Bradley Hand Bold.ttf");
+}
+
+/*============================================
+見出し
+============================================*/
+
+h1 {
+	font-family: Savoye;
+	font-size: 150px;
+	font-weight: 100;
+}
+
+h1 a {
+	color: #000000;
+}
+
+#home h1 a {
+	color: #FFFFFF;
+}
+
+
+h2.page_tit {
+	font-family: Apple;
+	font-size: 100px;
+	font-weight: 50;
+	text-align: center;
+	text-shadow: 10px 5px 5px #b7afaf;
+}
+
+h2.page_tit a {
+	color: #000000;
+}
+
+/*============================================
+letout設定
+============================================*/
+
+body#home {
+	background-image: url("../images/top_main_01.png");
+}
+#profile_body {
+	background:url("../images/profile_body_myimage.png") no-repeat left bottom,url("../images/profile_body_rightimage.png") no-repeat right bottom;
+	background-size: 30%;
+	padding-bottom: 150px;
+	overflow: hidden;
+}
+
+.conbox {
+	width: 1080px;
+	margin: 0 auto;
+}
+/*header----------------------*/
+
+header#top {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 4%;
+	overflow: hidden;
+	padding-bottom: 100px;
+}
+
+#header_top {
+	overflow: hidden;
+}
+
+/*nav----------------------*/
+nav {
+	width: 500px;/*メニューの全体の幅*/
+	background-color:rgba(0,0,0.1);/*背景色を白で半透明にする*/
+	height: 40px;
+	margin-top: 40px;
+}
+
+nav#top_nav {
+	background-color:rgba(255,255,255,0.1);/*背景色を白で半透明にする*/
+	height: 40px;
+	margin-top: 40px;
+}
+
+nav ul{
+	letter-spacing: -0.5em;/*display: inline-blockで横並びにすると、余計な余白ができて崩れるのでこれで調整*/
+	font-size: 0;
+}
+nav ul li{
+	display: inline-block;/*横並びにする*/
+	width:20%;/*全体を100%ととして、メニューが５つなので20%とする*/
+	text-align: center;
+	line-height: 40px;
+	letter-spacing: normal;/*display: inline-blockで横並びにすると、余計な余白ができて崩れるのでこれで調整*/
+	font-size: 16px;
+}
+nav ul li a {
+	color: #FFFFFF;
+	display: block;
+}
+
+nav ul li:hover{
+	background-color: #AA7A02;
+}
+
+/*============================================
+Top-page
+============================================*/
+div#main_bottom {
+	 float: right;
+	 position: absolute;
+	 bottom: 0px;
+	 right: 50px;
+}
+/*============================================
+Profile
+============================================*/
+#title_profile {
+	position: absolute;
+	text-align: center;
+	left: 50%;
+	transform: translate(-50%,0);
+}
+
+#main {
+	background: url("../images/Profile_main_02.png") no-repeat left bottom;
+	max-width: 1400px;
+	background-size: 70%;
+	width: 100%;
+	margin: 0 auto;
+	height: 600px;
+	position:  relative;
+}
+/*============================================
+Woeks
+============================================*/
+
+/*============================================
+Others
+============================================*/
+
+/*============================================
+Contact
+============================================*/
+
+
+
+
+
+
+
+
+.box {
+	width: 850px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+
+#profile {
+	width: 450px;
+	background-color: #edeba8;
+	text-align: center;
+	padding: 40px 0;
+	font-family: shirokuma;
+	position: absolute;
+	right: 0;
+	bottom: 200px;
+
+}
+
+.fsize40 {
+	font-size: 40px;
+}
+
+.fsize25 {
+	font-size: 25px;
+}
+
+.skill {
+	width: 300px;
+	height: 300px;
+	background-color: #FFFFFF;
+	border-radius: 50%;
+	box-shadow: 5px 10px 10px #000 ;
+	float: right;
+	margin: 20px;
+}
+
+.skill h2 {
+	font-family: shirokuma;
+}
+
+.skill h3 {
+	font-family: bradley;
+	font-size: 40px;
+	letter-spacing: 7px;
+	text-shadow: 10px 7px 5px #b7afaf;
+	text-align: center;
+}
+
+.skill p {
+	width: 220px;
+	height: 220px;
+	margin: 40px auto 0 auto;
+}
+
+.skill img {
+	width: 100%;
+}
+
+.box h3 {
+	text-align: center;
+	letter-spacing: 7px;
+}
+
+.info_top,.info_und {
+	width: 380px;
+	height: 300px;
+	background-color: #FFFFFF;
+	box-shadow: 5px 10px 10px #000 ;
+	margin: 20px;
+	padding: 40px 0 40px 30px;
+}
+
+.info_top h3,.info_und h3 {
+	font-family: bradley;
+	font-size: 40px;
+	letter-spacing: 5px;
+	text-shadow: 10px 7px 5px #b7afaf;
+	text-align: center;
+}
+
+.list {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.list li {
+	width: 30%;
+}
+
+.list_normal li {
+	margin-bottom: 20px;
+}
+
+.double_box {
+	width: 850px;
+	margin: 0 auto;
+}
+
+.double_box .box .info_top {
+	float: left;
+}
+
+.double_box .box .info_und {
+	float: right;
+}
+
+footer {
+	height: 200px;
+	background-color: #000000;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.footer_in {
+	width: 850px;
+	margin: 0 auto;
+	padding-top: 90px;
+}
+
+#works_main {
+	width: 800px;
+	margin: 0 auto;
+}
+
+#works_main img {
+	width: 100%;
+	margin: 150px auto;
+}
+
+#box_title_web {
+	font-family: Apple;
+	font-size: 80px;
+	margin-bottom: 50px;
+	color: #0076D7;
+}
+
+#box_title_dtp {
+	font-family: Apple;
+	font-size: 80px;
+	margin-bottom: 50px;
+	color: #FF491F;
+}
+
+.works_box {
+	display: flex;
+	justify-content:  space-evenly;
+	margin-bottom: 20px;
+}
+
+.boxs {
+
+}
+
+.boxs:nth-child(2) {
+	margin: 0 20px;
+}
+
+.boxs img {
+
+}
+
+.four {
+	margin-bottom: 100px;
+}
+
+.conbox {
+	margin-top: 50px;
+}
+
+.works_left_layout	{
+	position: relative;
+	height: 900px;
+	width: 950px;
+	margin: 0 auto;
+}
+.works_bottom_layout {
+	position: relative;
+	width: 950px;
+	margin: 0 auto;
+	height: 900px;
+}
+
+h3.h3works {
+	font-size: 40px;
+	width: 950px;
+	margin: 0 auto;
+	font-family: shirokuma;
+}
+
+.works_squere {
+	width:  300px;
+	height: 300px;
+	background-color: #FFFFFF;
+	box-shadow: 5px 10px 10px #6f6f6f ;
+	margin: 20px;
+	padding: 40px 0 0 30px;
+	transform: rotate(-35deg);
+}
+
+.works_squere p,
+.works_squere h4 {
+	transform: translate(50px,90px) rotate(35deg);
+	font-size: 25px;
+	text-decoration: underline;
+}
+
+.works_squere p.detail {
+	margin-top: 20px;
+	font-size: 30px;
+}
+
+.works_squere p.time {
+	margin: 40px 0 0 40px;
+	font-size: 30px;
+
+}
+
+.works_squere p {
+	text-decoration: none;
+	font-size: 15px;
+}
+
+/*横タイプ*/
+
+.works_squere p.side_top,
+.works_squere h4.side_top {
+	transform: translate(50px,90px) rotate(35deg);
+	font-size: 25px;
+	text-decoration: underline;
+	padding: 0 0 0 30px;
+}
+
+
+.squere_top {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.squere_bottom {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.squere_bottom_left {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.works_img {
+	z-index: 100;
+	position: absolute;
+	left: 0;
+	top: 20px;
+}
+
+.works_img img {
+	border: 1px solid #A6A6A6;
+}
+
+.works_img_top {
+	z-index: 100;
+	position: absolute;
+	left: 0;
+	top: 200px;
+}
+
+#works_EC {
+	margin: 100px auto;
+	width: 950px;
+}
+
+.works_main {
+	margin-top: 150px;
+}
+
+#box_title_pictures {
+	font-family: Apple;
+	font-size: 80px;
+	margin-bottom: 50px;
+	color: #000000;
+	text-align: center;
+}
+
+
+/*作品ボタン*/
+.btn-animation-02 {
+margin-top: 50px;
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  background-color: #9ec34b;
+  border: 2px solid #9ec34b;
+  font-size: 16px;
+  color: #9ec34b;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 24px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.btn-animation-02 span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-animation-02::before,
+.btn-animation-02::after {
+  content: "";
+  display: block;
+  background-color: #FFF;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: .2s;
+}
+.btn-animation-02::before {
+  left: 0;
+}
+.btn-animation-02::after {
+  right: 0;
+}
+
+.btn-animation-02:hover:before,
+.btn-animation-02:hover:after {
+  width: 0;
+  background-color: #FFF;
+}
+
+.btn-animation-02:hover {
+  color: #FFF;
+}

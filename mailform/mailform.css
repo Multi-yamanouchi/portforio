@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+form#mailform {
+	padding: 5px;
+
+}
+table.mailform {
+	width: 100%;
+	margin-bottom: 100px;
+	border-collapse: separate;
+}
+table.mailform tr th,table.mailform tr td {
+	text-align: left;
+	font-weight: normal;
+	font-size: 12px;
+	padding: 15px 5px 15px 5px;
+}
+table.mailform tr th {
+	width: 30%;
+}
+
+table.mailform tr td {
+	width: 70%;
+}
+
+table.mailform tr th span {
+	color: #CC0000;
+	font-size: 10px;
+}
+table.mailform tr th p {
+	margin: 0px;
+	padding: 0px;
+	font-size: 10px;
+	color: #999999;
+}
+table.mailform tr td textarea {
+	width: 100%;
+	height: 120px;
+}
+
+table.mailform input{
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.textarea {
+	width: 68%!important;
+}

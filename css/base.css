@@ -27,26 +27,30 @@ a {
 .tunder {text-decoration: underline;}
 .tcenter {text-align: center;}
 
+/*Fontsize-------------------------------*/
+
+.fsize40 {font-size: 40px;}
+.fsize25 {font-size: 25px;}
 
 /*fontface----------------------*/
 @font-face {
 	font-family: Savoye;
-	src: url("../Savoye LET.ttc");
+	src: url("../font/Savoye LET.ttc");
 }
 
 @font-face {
 	font-family: Apple;
-	src: url("../Apple Chancery.ttf");
+	src: url("../font/Apple Chancery.ttf");
 }
 
 @font-face {
 	font-family: shirokuma;
-	src: url("../001Shirokuma-Regular.otf");
+	src: url("../font/001Shirokuma-Regular.otf");
 }
 
 @font-face {
 	font-family: bradley;
-	src: url("../Bradley Hand Bold.ttf");
+	src: url("../font/Bradley Hand Bold.ttf");
 }
 
 /*============================================
@@ -96,8 +100,9 @@ body#home {
 
 .conbox {
 	width: 1080px;
-	margin: 0 auto;
+	margin: 50px auto 0 auto;
 }
+
 /*header----------------------*/
 
 header#top {
@@ -138,6 +143,7 @@ nav ul li{
 	letter-spacing: normal;/*display: inline-blockで横並びにすると、余計な余白ができて崩れるのでこれで調整*/
 	font-size: 16px;
 }
+
 nav ul li a {
 	color: #FFFFFF;
 	display: block;
@@ -175,31 +181,6 @@ Profile
 	height: 600px;
 	position:  relative;
 }
-/*============================================
-Woeks
-============================================*/
-
-/*============================================
-Others
-============================================*/
-
-/*============================================
-Contact
-============================================*/
-
-
-
-
-
-
-
-
-.box {
-	width: 850px;
-	margin: 0 auto;
-	overflow: hidden;
-}
-
 
 #profile {
 	width: 450px;
@@ -210,17 +191,12 @@ Contact
 	position: absolute;
 	right: 0;
 	bottom: 200px;
-
 }
-
-.fsize40 {
-	font-size: 40px;
+.box {
+	width: 850px;
+	margin: 0 auto;
+	overflow: hidden;
 }
-
-.fsize25 {
-	font-size: 25px;
-}
-
 .skill {
 	width: 300px;
 	height: 300px;
@@ -301,18 +277,9 @@ Contact
 	float: right;
 }
 
-footer {
-	height: 200px;
-	background-color: #000000;
-	color: #FFFFFF;
-	text-align: center;
-}
-
-.footer_in {
-	width: 850px;
-	margin: 0 auto;
-	padding-top: 90px;
-}
+/*============================================
+Works
+============================================*/
 
 #works_main {
 	width: 800px;
@@ -344,26 +311,13 @@ footer {
 	margin-bottom: 20px;
 }
 
-.boxs {
-
-}
-
 .boxs:nth-child(2) {
 	margin: 0 20px;
-}
-
-.boxs img {
-
 }
 
 .four {
 	margin-bottom: 100px;
 }
-
-.conbox {
-	margin-top: 50px;
-}
-
 .works_left_layout	{
 	position: relative;
 	height: 900px;
@@ -416,7 +370,6 @@ h3.h3works {
 	text-decoration: none;
 	font-size: 15px;
 }
-
 /*横タイプ*/
 
 .works_squere p.side_top,
@@ -480,8 +433,6 @@ h3.h3works {
 	color: #000000;
 	text-align: center;
 }
-
-
 /*作品ボタン*/
 .btn-animation-02 {
 margin-top: 50px;
@@ -531,3 +482,33 @@ margin-top: 50px;
 .btn-animation-02:hover {
   color: #FFF;
 }
+
+
+/*============================================
+Others
+============================================*/
+
+
+/*============================================
+Footer
+============================================*/
+
+footer {
+	height: 200px;
+	background-color: #000000;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.footer_in {
+	width: 850px;
+	margin: 0 auto;
+	padding-top: 90px;
+}
+
+
+
+
+
+
+
